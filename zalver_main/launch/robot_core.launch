@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <param name="MaxDistance" type="int" value="40" />
+  
+  <!-- rusrun echo_tutorial basic_echo_node -->
+  
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node1" output="screen" args="18 17" ns="us1"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node2" output="screen" args="27 22" ns="us2"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node3" output="screen" args="23 24" ns="us3"></node>
+
+  
+  
+  <!--
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node1" output="screen" args="18 17" ns="us1"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node2" output="screen" args="27 22" ns="us2"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node3" output="screen" args="23 24" ns="us3"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node4" output="screen" args="26 20" ns="us4"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node5" output="screen" args="19 16" ns="us5"></node>
+  <node pkg="echo_tutorial" type="basic_echo_node" name="basic_echo_node6" output="screen" args="6 12" ns="us6"></node>  -->
+
+  
+ 
+  <node pkg="zalver_main" type="robot_main_node" name="robot_main_node" output="screen"></node>
+  
+  
+  <!-- <node pkg="zalver_main" type="robot_main_node" name="robot_main_node" output="screen"></node> -->
+  
+  
+  <node pkg="rospy_zv" type="Sound.py" name="Sound" output="screen"></node>
+  <node pkg="rospy_zv" type="UI_main.py" name="UI_main" output="screen"></node>
+  
+
+</launch>
+
